@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(220, 165, 228);
+        }
+        #helloform{
+            background-color:rgb(197, 194, 223);
+            border: 3px solid rgb(64, 6, 119);
+            padding: 70px;
+            margin: 34px;
+            border-radius: 23px;
+            box-sizing: border-box;
+        }
+        h2{
+            text-align: center;
+            font-family: "Bebas Neue";
+            margin: 20px;
+            font-size: 80px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h2>THIS IS A FORM WEBSITE </h2>
+    <form action="backend.php" id="helloform">
+        <label for="name">NAME: </label>
+        <div id="yourname ">
+             <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <label for="age">AGE: </label>
+        <div id="yourage">
+             <input type="text" name="myAge" id="age">
+        </div>
+        <br>
+        <label for="email">EMAIL: </label>
+        <div id="yourmail">
+             <input type="email" name="myEmail" id="email">
+
+        </div>
+        <br>
+        <label for="date">DATE: </label>
+        <div id="yourdate">
+             <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <label for="bonus">BONUS: </label>
+        <div id="yourbonus">
+            <input type="number" name="myBonus", id="bonus">
+        </div>
+        <br>
+        <label for="eligible">ARE YOU ELIGIBLE: </label>
+        <div id="youreligibility">
+             <input type="checkbox" name="myEligibility" id="eligible">
+        </div>
+        <br>
+        <label for="gender">GENDER: </label>
+        <div id="your gender">
+             Male <input type="radio" name="myGender" id="gender" >Female <input type="radio" name="myGender"id="gender" > Other <input type="radio" name="myGender"id="gender" >   
+            
+        </div>
+        <br>
+        <label for="description"> WRITE ABOUT YOURSELF: </label>
+        <div id="thedescription">
+             <textarea name="myText"  cols="30" rows="10" id="description"></textarea>
+        </div>
+        <br>
+        <div id="butttons">
+            <input type="button" value="SUBMIT NOW">
+            <input type="reset" value="RESET NOW">
+        </div>
+    </form>
+</body>
+</html>
